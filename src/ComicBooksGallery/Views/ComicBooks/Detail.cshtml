@@ -12,11 +12,11 @@
 <body>
     <div>
     <h1>ViewBag.SeriesTitle</h1>
-        <h2>Issue #ViewBag.IssueNumber</h2>
+        <h2>Issue #@ViewBag.IssueNumber</h2>
          <h5>Desciption</h5>
-          <div>@Html.Raw(ViewBag.Desciption)</div>
+          <div>@Html.Raw(@ViewBag.Desciption)</div>
         
-        @if (ViewBag.Artists.Length > 0)
+        @if (@ViewBag.Artists.Length > 0)
         {
          <h5>Artists:</h5>
          <ul>
